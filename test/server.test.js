@@ -124,7 +124,7 @@ describe('MarkdownServer', function() {
                 });
             });
 
-            it('with meta succeeds', function(done) {
+            xit('with meta succeeds', function(done) {
                 s.get('/server-update', function(err, result) {
                     var content = result.rawContent + '\n\n1. p1\n1. p2\n\n\n';
                     result.meta.draft = true;
